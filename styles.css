@@ -19,7 +19,19 @@ nav a { font-size: 16px; }
 nav a:hover, .text-link:hover { color: var(--blue); }
 .header-actions { display: flex; align-items: center; gap: 15px; }
 .search-btn { border: 1px solid var(--line); width: 48px; height: 48px; border-radius: 50%; background: transparent; font-size: 30px; line-height: 1; cursor: pointer; }
-.pill-btn { display: inline-flex; align-items: center; justify-content: center; background: var(--blue); color: white; border-radius: 999px; padding: 15px 28px; font-weight: 600; }
+.pill-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--blue);
+  color: white;
+  border-radius: 999px;
+  padding: 11px 20px;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 600;
+  white-space: nowrap;
+}
 .outline-btn { border: 1px solid var(--ink); border-radius: 999px; padding: 15px 28px; display: inline-flex; align-items: center; justify-content: center; }
 .menu-btn { display: none; border: 0; background: transparent; font-size: 25px; }
 .section-pad { padding-left: 3.8vw; padding-right: 3.8vw; }
