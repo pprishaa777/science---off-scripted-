@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Science — Off-Script.</title>
+  <meta name="description" content="The conversations behind the discoveries.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="home">
+    <a class="logo" href="index.html" aria-label="Science Off-Script home">SCIENCE <span>—</span> OFF-SCRIPT</a>
+    <nav id="main-nav"></nav>
+    <div class="header-actions">
+      <button class="search-btn" aria-label="Search">⌕</button>
+      <a class="pill-btn" id="community-top" href="#community"></a>
+    </div>
+    <button class="menu-btn" aria-label="Open menu">☰</button>
+  </header>
+
+  <main>
+    <section class="hero section-pad">
+      <div class="hero-copy">
+        <p class="eyebrow" id="hero-eyebrow"></p>
+        <h1 id="hero-title"></h1>
+        <p class="hero-subtitle" id="hero-subtitle"></p>
+        <p class="hero-description" id="hero-description"></p>
+        <div class="button-row">
+          <a class="pill-btn" id="hero-primary"></a>
+          <a class="outline-btn" id="hero-secondary"></a>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <img id="hero-image" alt="">
+        <span class="image-badge" id="hero-badge"></span>
+      </div>
+    </section>
+
+    <section class="latest section-pad" id="interviews">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" id="latest-eyebrow"></p>
+          <h2 id="latest-title"></h2>
+        </div>
+        <a class="text-link" id="latest-link"></a>
+      </div>
+      <div class="conversation-grid" id="conversation-grid"></div>
+    </section>
+
+    <section class="featured section-pad" id="discoveries">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" id="featured-eyebrow"></p>
+          <h2 id="featured-title"></h2>
+        </div>
+        <a class="text-link" id="featured-all"></a>
+      </div>
+      <article class="featured-card">
+        <div class="featured-image"><img id="featured-image" alt=""></div>
+        <div class="featured-copy">
+          <p class="eyebrow" id="featured-article-eyebrow"></p>
+          <h3 id="featured-article-title"></h3>
+          <p class="featured-description" id="featured-description"></p>
+          <p class="byline"><strong id="featured-person"></strong><span> · </span><span id="featured-role"></span></p>
+          <a class="text-link" id="featured-link"></a>
+        </div>
+      </article>
+    </section>
+
+    <section class="simple-section section-pad" id="explained">
+      <p class="eyebrow">EXPLAINED</p>
+      <h2>Science, without the jargon.</h2>
+      <p>Add your explained stories here by editing <code>content.js</code>. You can also duplicate a conversation card and turn it into a new category.</p>
+    </section>
+
+    <section class="community section-pad" id="community">
+      <div>
+        <p class="eyebrow">COMMUNITY</p>
+        <h2 id="footer-community-title"></h2>
+        <p id="footer-community-text"></p>
+      </div>
+      <a class="pill-btn" id="footer-button"></a>
+    </section>
+
+    <section class="simple-section section-pad" id="about">
+      <p class="eyebrow">ABOUT</p>
+      <h2>Curiosity comes first.</h2>
+      <p>Replace this section with your publication’s mission, team, contact details, social links, or anything else you want readers to know.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span id="copyright"></span><span>Built for easy day-to-day editing.</span></footer>
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
