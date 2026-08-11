@@ -7,15 +7,15 @@
 const SITE = {
   brand: 'SCIENCE — OFF-SCRIPT',
   nav: [
-    { label: 'Home', href: 'index.html' },
-    { label: 'Interviews', href: '#interviews' },
-    { label: 'Discoveries', href: '#discoveries' },
-    { label: 'Explained', href: '#explained' },
-    { label: 'Community', href: '#community' },
-    { label: 'About', href: '#about' }
-  ],
+  { label: 'Home', href: 'index.html' },
+  { label: 'Interviews', href: 'interviews.html' },
+  { label: 'Discoveries', href: 'discoveries.html' },
+  { label: 'Explained', href: 'explained.html' },
+  { label: 'Community', href: 'community.html' },
+  { label: 'About', href: 'about.html' }
+],
   searchLabel: 'Search',
-  communityButton: { label: 'Join the Community', href: '#community' },
+  communityButton: { label: 'Join the Community', href: 'community.html' },
 
   hero: {
     eyebrow: 'ISSUE 001 · FEB 2026',
