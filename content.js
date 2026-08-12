@@ -18,10 +18,10 @@ const SITE = {
   communityButton: { label: 'Join the Community', href: 'community.html' },
 
   hero: {
-    eyebrow: 'ISSUE 001 · FEB 2026',
+    eyebrow: 'EST 2026',
     title: 'Science — Off-Script.',
     subtitle: 'The conversations behind the discoveries.',
-    description: 'We talk to the doctors, researchers, and students shaping what happens next — and ask the questions that don’t make it into the paper.',
+    description: 'We talk to the doctors, researchers, and students shaping what happens next — and ask the questions that don’t make it into the papers.',
     primaryButton: { label: 'Explore Interviews →', href: '#interviews' },
     secondaryButton: { label: 'Ask a Question', href: '#community' },
 image:'assets/brain.jpg',
