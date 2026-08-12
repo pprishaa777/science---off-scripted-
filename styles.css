@@ -120,7 +120,7 @@ nav a.active::after {
   display: grid;
   grid-template-columns: 1.05fr .95fr;
   align-items: center;
-  gap: 6vw;
+  gap: 4vw;
   padding-top: 55px;
   padding-bottom: 55px;
 }
@@ -177,7 +177,7 @@ nav a.active::after {
 
 .hero-image-wrap {
   position: relative;
-  max-width: 390px;
+  max-width: 360px;
   justify-self: end;
 }
 
