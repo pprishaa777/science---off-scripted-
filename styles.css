@@ -116,14 +116,13 @@ nav a.active::after {
 .menu-btn { display: none; border: 0; background: transparent; font-size: 25px; }
 .section-pad { padding-left: 3.8vw; padding-right: 3.8vw; }
 .hero {
-  min-height: 500px;
+  min-height: 760px;
   display: grid;
-  grid-template-columns: 680px 360px;
+  grid-template-columns: 1.05fr .95fr;
   align-items: center;
-  gap: 90px;
-  padding-top: 55px;
-  padding-bottom: 55px;
-  justify-content: start;
+  gap: 7vw;
+  padding-top: 90px;
+  padding-bottom: 85px;
 }
 
 .eyebrow {
@@ -178,27 +177,27 @@ nav a.active::after {
 
 .hero-image-wrap {
   position: relative;
-  max-width: 360px;
-  justify-self: start;
+  max-width: 545px;
+  justify-self: end;
 }
 
 .hero-image-wrap:before {
   content: '';
   position: absolute;
-  width: 170px;
-  height: 170px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   background: #e9e8e2;
-  right: -30px;
-  top: -30px;
+  right: -28px;
+  top: -35px;
   z-index: -1;
 }
 
 .hero-image-wrap:after {
   content: '';
   position: absolute;
-  width: 105px;
-  height: 105px;
+  width: 115px;
+  height: 115px;
   border: 2px solid #c9d9ef;
   border-radius: 50%;
   left: -30px;
@@ -208,7 +207,7 @@ nav a.active::after {
 
 .hero-image-wrap img {
   width: 100%;
-  aspect-ratio: .86;
+  aspect-ratio: .79;
   object-fit: cover;
   display: block;
 }
