@@ -55,8 +55,8 @@ image:'assets/brain.avif',
       description: 'Dr. Hana Castellani on single-cell sequencing, why the “tumor” is a lie, and the beauty of a stubborn outlier.',
       person: 'Dr. Hana Castellani',
       role: 'Senior Researcher, Cancer Systems Biology, Westgate Cancer Research Centre',
-      image: 'assets/image3.png',
-      imageAlt: 'Researcher examining a sample in a laboratory',
+      image: 'assets/micro.avif',
+      imageAlt: 'Microscope',
       link: 'article.html?id=conversation-003',
       linkLabel: 'Read the Interview ↗'
     }
