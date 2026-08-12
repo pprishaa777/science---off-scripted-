@@ -177,7 +177,7 @@ nav a.active::after {
 
 .hero-image-wrap {
   position: relative;
-  max-width: 360px;
+  max-width: 390px;
   justify-self: end;
 }
 
