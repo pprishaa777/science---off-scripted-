@@ -213,34 +213,34 @@ const PAGES = {
 
 
   community: {
-    eyebrow: 'COMMUNITY',
-    title: 'Have a question for a researcher?',
-    description: 'Send us the question you wish someone would ask. The questions that make you curious, challenge assumptions, or simply make you wonder “why?”',
+  eyebrow: 'COMMUNITY',
+  title: 'Have a question for a researcher?',
+  description: 'Send us the question you wish someone would ask. The questions that make you curious, challenge assumptions, or simply make you wonder “why?”',
 
-    formTitle: 'What would you ask?',
-    formText: 'We’re building a community around curiosity. Tell us what you want to know and your question could become part of a future conversation.'
-  },
+  formTitle: 'What would you ask?',
+  formText: 'We’re building a community around curiosity. Tell us what you want to know and your question could become part of a future conversation.'
+},
 
 
   about: {
-    eyebrow: 'ABOUT SCIENCE — OFF-SCRIPT',
-    title: 'Science is more than the final paper.',
-    description: 'Science — Off-Script is a space for the conversations, questions, discoveries, and ideas that happen behind the published research.',
+  eyebrow: 'ABOUT SCIENCE — OFF-SCRIPT',
+  title: 'Science is more than the final paper.',
+  description: 'Science — Off-Script is a space for the conversations, questions, discoveries, and ideas that happen behind the published research.',
 
-    whyEyebrow: 'WHY WE’RE HERE',
-    whyTitle: 'Behind every discovery is a person.',
-    whyText: [
-      'Research is often reduced to a headline, a result, or a number. But science is a human process.',
-      'There are questions, failures, unexpected results, long nights, stubborn problems, and moments when something finally makes sense.',
-      'Science — Off-Script is about those stories.'
-    ],
+  whyEyebrow: 'WHY WE’RE HERE',
+  whyTitle: 'Behind every discovery is a person.',
+  whyText: [
+    'Research is often reduced to a headline, a result, or a number. But science is a human process.',
+    'There are questions, failures, unexpected results, long nights, stubborn problems, and moments when something finally makes sense.',
+    'Science — Off-Script is about those stories.'
+  ],
 
-    coverageEyebrow: 'WHAT WE COVER',
-    coverageTitle: 'Curiosity first.',
-    coverageText: [
-      'We talk to researchers, doctors, students, and scientists about the work they’re doing and the questions they’re still trying to answer.',
-      'From medicine and biology to technology and the unexpected discoveries that change how we see the world.'
-    ]
-  }
+  coverageEyebrow: 'WHAT WE COVER',
+  coverageTitle: 'Curiosity first.',
+  coverageText: [
+    'We talk to researchers, doctors, students, and scientists about the work they’re doing and the questions they’re still trying to answer.',
+    'From medicine and biology to technology and the unexpected discoveries that change how we see the world.'
+  ]
+}
 
 };
