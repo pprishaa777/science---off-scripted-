@@ -25,8 +25,8 @@ const SITE = {
     primaryButton: { label: 'Explore Interviews →', href: '#interviews' },
     secondaryButton: { label: 'Ask a Question', href: '#community' },
 image:'assets/brain.avif',
-    imageAlt: 'Researcher working in a laboratory',
-    badge: 'Conversation 001'
+    imageAlt: 'Medical X-ray Image',
+    badge: ''
   },
 
   latest: {
