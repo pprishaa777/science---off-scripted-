@@ -28,7 +28,6 @@ image:'assets/brain.avif',
     imageAlt: 'Medical X-ray Image',
     badge: ''
   },
-
   latest: {
     eyebrow: 'LATEST CONVERSATIONS',
     title: 'Real people. Real research.\nReal curiosity.',
@@ -43,7 +42,7 @@ image:'assets/brain.avif',
     description: 'Dr. Noor Kessler on radiology, humility, and building AI that keeps the doctor in the loop.',
     person: 'Dr. Noor Kessler',
     role: 'Clinical Lead, Imaging AI Program, Rivendale University Hospital',
-    image: 'assets/robot's hand.png',
+    image: "assets/robot's hand.png",
     imageAlt: 'Robot hand',
     link: 'article.html?id=conversation-002',
     linkLabel: 'Read the Interview ↗'
@@ -166,43 +165,43 @@ const ARTICLES = {
 const PAGES = {
 
   discoveries: {
-    eyebrow: 'DISCOVERIES',
-    title: 'Discoveries worth talking about.',
-    description: 'New findings, unexpected breakthroughs, and the science changing what we know about the world.',
+  eyebrow: 'DISCOVERIES',
+  title: 'Discoveries worth talking about.',
+  description: 'New findings, unexpected breakthroughs, and the science changing what we know about the world.',
 
-    sectionEyebrow: 'LATEST DISCOVERIES',
-    sectionTitle: 'What scientists are finding now.',
+  sectionEyebrow: 'LATEST DISCOVERIES',
+  sectionTitle: 'What scientists are finding now.',
 
-    stories: [
-      {
-        eyebrow: 'DISCOVERY 001',
-        title: 'A new way of looking at the brain',
-        description: 'Replace this text with your latest discovery, research finding, or science news story.',
-        image: 'assets/brain.jpg',
-        imageAlt: 'Scientific research',
-        link: 'article.html?id=conversation-001',
-        linkLabel: 'Read the story →'
-      },
-      {
-        eyebrow: 'DISCOVERY 002',
-        title: 'When medicine meets artificial intelligence',
-        description: 'Add another discovery, breakthrough, or research story here.',
-        image: 'assets/image2.png',
-        imageAlt: 'Medical research',
-        link: 'article.html?id=conversation-002',
-        linkLabel: 'Read the story →'
-      },
-      {
-        eyebrow: 'DISCOVERY 003',
-        title: 'What a single cell can reveal',
-        description: 'Add your next science discovery or research story here.',
-        image: 'assets/image3.png',
-        imageAlt: 'Cancer research',
-        link: 'article.html?id=conversation-003',
-        linkLabel: 'Read the story →'
-      }
-    ]
-  },
+  stories: [
+    {
+      eyebrow: 'DISCOVERY 001',
+      title: 'A new way of looking at the brain',
+      description: 'Replace this text with your latest discovery, research finding, or science news story.',
+      image: 'assets/brain.jpg',
+      imageAlt: 'Scientific research',
+      link: 'article.html?id=conversation-001',
+      linkLabel: 'Read the story →'
+    },
+    {
+      eyebrow: 'DISCOVERY 002',
+      title: 'When medicine meets artificial intelligence',
+      description: 'Add another discovery, breakthrough, or research story here.',
+      image: 'assets/image2.png',
+      imageAlt: 'Medical research',
+      link: 'article.html?id=conversation-002',
+      linkLabel: 'Read the story →'
+    },
+    {
+      eyebrow: 'DISCOVERY 003',
+      title: 'What a single cell can reveal',
+      description: 'Add your next science discovery or research story here.',
+      image: 'assets/image3.png',
+      imageAlt: 'Cancer research',
+      link: 'article.html?id=conversation-003',
+      linkLabel: 'Read the story →'
+    }
+  ]
+},
 
 
   explained: {
