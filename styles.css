@@ -203,3 +203,7 @@ code { font-family: monospace; background: #e9e8e2; padding: 2px 5px; }
   }
 
 }
+.site-footer .pill-btn {
+  padding: 8px 16px;
+  font-size: 13px;
+}
