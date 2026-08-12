@@ -46,7 +46,7 @@ nav {
 nav a {
   position: relative;
   color: var(--ink);
-  font-size: 10px;
+  font-size: 12px;
   transition: color .2s ease;
 }
 nav a::after {
