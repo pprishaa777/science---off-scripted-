@@ -39,72 +39,28 @@
 
     <section class="simple-section section-pad">
 
-      <p class="eyebrow">
-        COMMUNITY
-      </p>
+      <p class="eyebrow" id="community-eyebrow"></p>
 
-      <h1>
-        Have a question<br>
-        for a researcher?
-      </h1>
+      <h1 id="community-title"></h1>
 
-      <p class="section-intro">
-        Send us the question you wish someone would ask.
-        The questions that make you curious, challenge assumptions,
-        or simply make you wonder “why?”
-      </p>
+      <p class="section-intro" id="community-description"></p>
 
     </section>
 
 
     <section class="section-pad community-section">
 
-      <div class="community-copy">
+      <div class="community-content">
 
-        <p class="eyebrow">
+        <p class="eyebrow" id="community-form-eyebrow">
           ASK A QUESTION
         </p>
 
-        <h2>
-          What would you ask?
-        </h2>
+        <h2 id="community-form-title"></h2>
 
-        <p>
-          We're building a community around curiosity. Tell us what
-          you want to know and your question could become part of a
-          future conversation.
-        </p>
+        <p id="community-form-text"></p>
 
-      </div>
-
-
-      <div class="community-form">
-
-        <form action="mailto:scienceoffscript@gmail.com" method="post" enctype="text/plain">
-
-          <label for="name">
-            Your name
-          </label>
-
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Your name"
-          >
-
-
-          <label for="email">
-            Your email
-          </label>
-
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="you@example.com"
-          >
-
+        <form class="community-form">
 
           <label for="question">
             Your question
@@ -113,16 +69,12 @@
           <textarea
             id="question"
             name="question"
-            rows="7"
+            rows="6"
             placeholder="What would you ask a researcher?"
           ></textarea>
 
-
-          <button
-            type="submit"
-            class="pill-btn"
-          >
-            Send Question →
+          <button type="submit" class="pill-btn">
+            Send your question →
           </button>
 
         </form>
@@ -137,21 +89,27 @@
   <footer class="site-footer">
 
     <div>
+
       <p class="eyebrow">
         SCIENCE — OFF-SCRIPT
       </p>
 
       <h2>
-        Stay curious.
+        Have a question<br>
+        for a researcher?
       </h2>
+
     </div>
 
-    <a class="pill-btn" href="index.html">
-      Back to Home
+    <a class="pill-btn" href="community.html">
+      Join the Community
     </a>
 
   </footer>
 
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
