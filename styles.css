@@ -110,9 +110,9 @@ code { font-family: monospace; background: #e9e8e2; padding: 2px 5px; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 8vw;
-  padding-top: 55px;
-  padding-bottom: 55px;
+  gap: 70px;
+  padding-top: 45px;
+  padding-bottom: 45px;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -127,7 +127,7 @@ code { font-family: monospace; background: #e9e8e2; padding: 2px 5px; }
   line-height: 1;
   letter-spacing: -2px;
   font-weight: 500;
-  margin: 0 0 25px;
+  margin: 0 0 22px;
 }
 
 .community-text > p:not(.eyebrow) {
@@ -140,14 +140,14 @@ code { font-family: monospace; background: #e9e8e2; padding: 2px 5px; }
 .community-form-box {
   background: white;
   border: 1px solid var(--line);
-  border-radius: 24px;
-  padding: 30px;
+  border-radius: 18px;
+  padding: 25px;
 }
 
 .community-form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 14px;
 }
 
 .community-form label {
@@ -157,12 +157,12 @@ code { font-family: monospace; background: #e9e8e2; padding: 2px 5px; }
 
 .community-form textarea {
   width: 100%;
-  min-height: 180px;
+  min-height: 160px;
   box-sizing: border-box;
   resize: vertical;
   border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 16px;
+  border-radius: 10px;
+  padding: 14px;
   font-family: var(--sans);
   font-size: 16px;
   line-height: 1.5;
@@ -182,20 +182,24 @@ code { font-family: monospace; background: #e9e8e2; padding: 2px 5px; }
 }
 
 
-/* MOBILE */
+/* COMMUNITY MOBILE */
 
 @media (max-width: 900px) {
 
   .community-section {
     grid-template-columns: 1fr;
-    gap: 40px;
-    padding-top: 45px;
-    padding-bottom: 45px;
+    gap: 35px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .community-form-box {
     width: 100%;
     box-sizing: border-box;
+  }
+
+  .community-text h2 {
+    font-size: 48px;
   }
 
 }
