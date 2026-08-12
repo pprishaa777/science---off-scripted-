@@ -104,3 +104,98 @@ code { font-family: monospace; background: #e9e8e2; padding: 2px 5px; }
   .site-footer { padding: 25px 5vw; flex-direction: column; }
   .article-hero { width: 90vw; }
 }
+/* COMMUNITY PAGE */
+
+.community-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 8vw;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.community-text {
+  max-width: 600px;
+}
+
+.community-text h2 {
+  font-family: var(--serif);
+  font-size: clamp(45px, 5vw, 70px);
+  line-height: 1;
+  letter-spacing: -2px;
+  font-weight: 500;
+  margin: 0 0 25px;
+}
+
+.community-text > p:not(.eyebrow) {
+  color: var(--muted);
+  font-size: 19px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.community-form-box {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 30px;
+}
+
+.community-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.community-form label {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.community-form textarea {
+  width: 100%;
+  min-height: 180px;
+  box-sizing: border-box;
+  resize: vertical;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px;
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.5;
+  background: var(--paper);
+  color: var(--ink);
+  outline: none;
+}
+
+.community-form textarea:focus {
+  border-color: var(--blue);
+}
+
+.community-form .pill-btn {
+  border: 0;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .community-section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  .community-form-box {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+}
