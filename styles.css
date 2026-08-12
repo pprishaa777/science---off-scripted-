@@ -116,13 +116,13 @@ nav a.active::after {
 .menu-btn { display: none; border: 0; background: transparent; font-size: 25px; }
 .section-pad { padding-left: 3.8vw; padding-right: 3.8vw; }
 .hero {
-  min-height: 430px;
+  min-height: 500px;
   display: grid;
   grid-template-columns: 1.05fr .95fr;
-  align-items: start;
+  align-items: center;
   gap: 6vw;
-  padding-top: 42px;
-  padding-bottom: 48px;
+  padding-top: 55px;
+  padding-bottom: 55px;
 }
 
 .eyebrow {
