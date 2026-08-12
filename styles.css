@@ -132,28 +132,30 @@ nav a.active::after {
   font-weight: 700;
   margin: 0 0 18px;
 }
-
+.hero-copy {
+  transform: translateY(-35px);
+}
 .hero h1 {
   font-family: var(--serif);
-  font-size: clamp(58px, 5.8vw, 84px);
+  font-size: clamp(62px, 6.2vw, 90px);
   line-height: .94;
   letter-spacing: -3px;
-  max-width: 620px;
-  margin: 0 0 18px;
+  max-width: 650px;
+  margin: 0 0 20px;
   white-space: pre-line;
 }
 
 .hero-subtitle {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 16px;
+  font-size: 20px;
   color: #595955;
   margin: 0 0 17px;
 }
 
 .hero-description {
-  max-width: 520px;
-  font-size: 13px;
+  max-width: 560px;
+  font-size: 16px;
   line-height: 1.55;
   color: #565652;
   margin: 0 0 24px;
