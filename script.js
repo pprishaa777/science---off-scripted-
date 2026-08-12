@@ -18,9 +18,20 @@ function setImage(id, src, alt) {
 function renderHeader() {
   const nav = document.getElementById('main-nav');
   if (!nav) return;
-  nav.innerHTML = SITE.nav.map(item => `<a href="${item.href}">${item.label}</a>`).join('');
+
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+
+  nav.innerHTML = SITE.nav.map(item => {
+    const isActive = item.href === currentPage;
+    return `<a href="${item.href}" class="${isActive ? 'active' : ''}">${item.label}</a>`;
+  }).join('');
+
   const top = document.getElementById('community-top');
-  if (top) { top.textContent = SITE.communityButton.label; top.href = SITE.communityButton.href; }
+
+  if (top) {
+    top.textContent = SITE.communityButton.label;
+    top.href = SITE.communityButton.href;
+  }
 }
 function renderDiscoveries() {
 
