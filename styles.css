@@ -112,7 +112,7 @@ nav a.active::after {
   font-weight: 600;
   white-space: nowrap;
 }
-.outline-btn { border: 1px solid var(--ink); border-radius: 999px; padding: 15px 28px; display: inline-flex; align-items: center; justify-content: center; }
+.outline-btn { border: 1px solid #8a8a86; border-radius: 999px; padding: 15px 28px; display: inline-flex; align-items: center; justify-content: center; }
 .menu-btn { display: none; border: 0; background: transparent; font-size: 25px; }
 .section-pad { padding-left: 3.8vw; padding-right: 3.8vw; }
 .hero {
