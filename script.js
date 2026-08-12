@@ -22,7 +22,64 @@ function renderHeader() {
   const top = document.getElementById('community-top');
   if (top) { top.textContent = SITE.communityButton.label; top.href = SITE.communityButton.href; }
 }
+function renderDiscoveries() {
 
+  const grid = document.getElementById('discoveries-grid');
+
+  if (!grid || !PAGES || !PAGES.discoveries) return;
+
+  const page = PAGES.discoveries;
+
+  setText('discoveries-eyebrow', page.eyebrow);
+  setText('discoveries-title', page.title);
+  setText('discoveries-description', page.description);
+
+  setText(
+    'discoveries-section-eyebrow',
+    page.sectionEyebrow
+  );
+
+  setText(
+    'discoveries-section-title',
+    page.sectionTitle
+  );
+
+  grid.innerHTML = page.stories.map(item => `
+
+    <article class="story-card">
+
+      <div class="story-image">
+        <img
+          src="${item.image}"
+          alt="${item.imageAlt}"
+        >
+      </div>
+
+      <div class="story-content">
+
+        <p class="eyebrow">
+          ${item.eyebrow}
+        </p>
+
+        <h3>
+          ${item.title}
+        </h3>
+
+        <p>
+          ${item.description}
+        </p>
+
+        <a href="${item.link}">
+          ${item.linkLabel}
+        </a>
+
+      </div>
+
+    </article>
+
+  `).join('');
+
+}
 function renderHome() {
 
   // Homepage hero
@@ -196,4 +253,5 @@ function renderArticle() {
 
 renderHeader();
 renderHome();
+renderDiscoveries();
 renderArticle();
