@@ -44,15 +44,11 @@ nav {
 }
 
 nav a {
-  font-size: 10px;
-}
-
-nav a {
   position: relative;
   color: var(--ink);
+  font-size: 10px;
   transition: color .2s ease;
 }
-
 nav a::after {
   content: '';
   position: absolute;
