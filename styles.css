@@ -230,7 +230,7 @@ nav a.active::after {
 .text-link { color: var(--blue); font-weight: 700; font-size: 16px; }
 .conversation-grid {
   display: grid;
-  grid-template-columns: 1.35fr 0.9fr;
+  grid-template-columns: 1.1fr 0.9fr;
   grid-template-rows: repeat(2, minmax(0, 1fr));
   gap: 50px;
   align-items: stretch;
