@@ -127,3 +127,120 @@ const ARTICLES = {
     ]
   }
 };
+
+// Pages below are also editable here.
+
+const PAGES = {
+
+  discoveries: {
+    eyebrow: 'DISCOVERIES',
+    title: 'Discoveries worth talking about.',
+    description: 'New findings, unexpected breakthroughs, and the science changing what we know about the world.',
+
+    sectionEyebrow: 'LATEST DISCOVERIES',
+    sectionTitle: 'What scientists are finding now.',
+
+    stories: [
+      {
+        eyebrow: 'DISCOVERY 001',
+        title: 'A new way of looking at the brain',
+        description: 'Replace this text with your latest discovery, research finding, or science news story.',
+        image: 'assets/brain.jpg',
+        imageAlt: 'Scientific research',
+        link: 'article.html?id=conversation-001',
+        linkLabel: 'Read the story →'
+      },
+      {
+        eyebrow: 'DISCOVERY 002',
+        title: 'When medicine meets artificial intelligence',
+        description: 'Add another discovery, breakthrough, or research story here.',
+        image: 'assets/image2.png',
+        imageAlt: 'Medical research',
+        link: 'article.html?id=conversation-002',
+        linkLabel: 'Read the story →'
+      },
+      {
+        eyebrow: 'DISCOVERY 003',
+        title: 'What a single cell can reveal',
+        description: 'Add your next science discovery or research story here.',
+        image: 'assets/image3.png',
+        imageAlt: 'Cancer research',
+        link: 'article.html?id=conversation-003',
+        linkLabel: 'Read the story →'
+      }
+    ]
+  },
+
+
+  explained: {
+    eyebrow: 'EXPLAINED',
+    title: 'Science, without the jargon.',
+    description: 'Complicated ideas, research, and discoveries explained clearly — without losing what makes the science interesting.',
+
+    sectionEyebrow: 'LATEST EXPLAINERS',
+    sectionTitle: 'The science behind the story.',
+
+    stories: [
+      {
+        eyebrow: 'EXPLAINED 001',
+        title: 'What happens when we rewrite a gene?',
+        description: 'A clear introduction to gene therapy and how scientists are learning to edit the instructions inside our cells.',
+        image: 'assets/brain.jpg',
+        imageAlt: 'Brain research',
+        link: 'article.html?id=conversation-001',
+        linkLabel: 'Read the explanation →'
+      },
+      {
+        eyebrow: 'EXPLAINED 002',
+        title: 'How does medical AI actually work?',
+        description: 'An accessible look at how algorithms can help doctors find patterns in medical images.',
+        image: 'assets/image2.png',
+        imageAlt: 'Medical research',
+        link: 'article.html?id=conversation-002',
+        linkLabel: 'Read the explanation →'
+      },
+      {
+        eyebrow: 'EXPLAINED 003',
+        title: 'Why does studying one cell matter?',
+        description: 'Understanding single cells can reveal details about diseases that disappear when we only look at an entire tumour.',
+        image: 'assets/image3.png',
+        imageAlt: 'Cancer research',
+        link: 'article.html?id=conversation-003',
+        linkLabel: 'Read the explanation →'
+      }
+    ]
+  },
+
+
+  community: {
+    eyebrow: 'COMMUNITY',
+    title: 'Have a question for a researcher?',
+    description: 'Send us the question you wish someone would ask. The questions that make you curious, challenge assumptions, or simply make you wonder “why?”',
+
+    formTitle: 'What would you ask?',
+    formText: 'We’re building a community around curiosity. Tell us what you want to know and your question could become part of a future conversation.'
+  },
+
+
+  about: {
+    eyebrow: 'ABOUT SCIENCE — OFF-SCRIPT',
+    title: 'Science is more than the final paper.',
+    description: 'Science — Off-Script is a space for the conversations, questions, discoveries, and ideas that happen behind the published research.',
+
+    whyEyebrow: 'WHY WE’RE HERE',
+    whyTitle: 'Behind every discovery is a person.',
+    whyText: [
+      'Research is often reduced to a headline, a result, or a number. But science is a human process.',
+      'There are questions, failures, unexpected results, long nights, stubborn problems, and moments when something finally makes sense.',
+      'Science — Off-Script is about those stories.'
+    ],
+
+    coverageEyebrow: 'WHAT WE COVER',
+    coverageTitle: 'Curiosity first.',
+    coverageText: [
+      'We talk to researchers, doctors, students, and scientists about the work they’re doing and the questions they’re still trying to answer.',
+      'From medicine and biology to technology and the unexpected discoveries that change how we see the world.'
+    ]
+  }
+
+};
