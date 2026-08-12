@@ -224,7 +224,60 @@ function renderHome() {
   );
 
 }
+function renderExplained() {
+  const grid = document.getElementById('explained-grid');
 
+  if (!grid || !PAGES || !PAGES.explained) return;
+
+  const page = PAGES.explained;
+
+  setText('explained-eyebrow', page.eyebrow);
+  setText('explained-title', page.title);
+  setText('explained-description', page.description);
+
+  setText(
+    'explained-section-eyebrow',
+    page.sectionEyebrow
+  );
+
+  setText(
+    'explained-section-title',
+    page.sectionTitle
+  );
+
+  grid.innerHTML = page.stories.map(item => `
+    <article class="story-card">
+
+      <div class="story-image">
+        <img
+          src="${item.image}"
+          alt="${item.imageAlt}"
+        >
+      </div>
+
+      <div class="story-content">
+
+        <p class="eyebrow">
+          ${item.eyebrow}
+        </p>
+
+        <h3>
+          ${item.title}
+        </h3>
+
+        <p>
+          ${item.description}
+        </p>
+
+        <a href="${item.link}">
+          ${item.linkLabel}
+        </a>
+
+      </div>
+
+    </article>
+  `).join('');
+}
 function renderArticle() {
   const root = document.getElementById('article-root');
   if (!root) return;
@@ -254,4 +307,5 @@ function renderArticle() {
 renderHeader();
 renderHome();
 renderDiscoveries();
+renderExplained();
 renderArticle();
