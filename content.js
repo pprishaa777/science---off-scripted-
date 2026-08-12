@@ -43,7 +43,7 @@ image:'assets/brain.avif',
     description: 'Dr. Noor Kessler on radiology, humility, and building AI that keeps the doctor in the loop.',
     person: 'Dr. Noor Kessler',
     role: 'Clinical Lead, Imaging AI Program, Rivendale University Hospital',
-    image: 'assets/robo hand.avif',
+    image: 'assets/robot's hand.png',
     imageAlt: 'Robot hand',
     link: 'article.html?id=conversation-002',
     linkLabel: 'Read the Interview ↗'
