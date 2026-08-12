@@ -121,7 +121,7 @@ nav a.active::after {
   grid-template-columns: 1.05fr .95fr;
   align-items: center;
   gap: 7vw;
-  padding-top: 90px;
+  padding-top: 30px;
   padding-bottom: 35px;
 }
 
@@ -133,7 +133,7 @@ nav a.active::after {
   margin: 0 0 18px;
 }
 .hero-copy {
-  transform: translateY(-35px);
+  transform: translateY(-55px);
 }
 .hero h1 {
   font-family: var(--serif);
