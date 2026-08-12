@@ -118,11 +118,12 @@ nav a.active::after {
 .hero {
   min-height: 500px;
   display: grid;
-  grid-template-columns: 1.05fr .95fr;
+  grid-template-columns: 680px 360px;
   align-items: center;
-  gap: 2vw;
+  gap: 90px;
   padding-top: 55px;
   padding-bottom: 55px;
+  justify-content: start;
 }
 
 .eyebrow {
