@@ -109,8 +109,6 @@ function renderHome() {
       SITE.hero.image,
       SITE.hero.imageAlt
     );
-
-    setText('hero-badge', SITE.hero.badge);
   }
 
 
