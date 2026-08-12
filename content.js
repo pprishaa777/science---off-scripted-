@@ -173,43 +173,43 @@ const PAGES = {
 
 
   explained: {
-    eyebrow: 'EXPLAINED',
-    title: 'Science, without the jargon.',
-    description: 'Complicated ideas, research, and discoveries explained clearly — without losing what makes the science interesting.',
+  eyebrow: 'EXPLAINED',
+  title: 'Science, without the jargon.',
+  description: 'Complicated ideas, research, and discoveries explained clearly — without losing what makes the science interesting.',
 
-    sectionEyebrow: 'LATEST EXPLAINERS',
-    sectionTitle: 'The science behind the story.',
+  sectionEyebrow: 'LATEST EXPLAINERS',
+  sectionTitle: 'The science behind the story.',
 
-    stories: [
-      {
-        eyebrow: 'EXPLAINED 001',
-        title: 'What happens when we rewrite a gene?',
-        description: 'A clear introduction to gene therapy and how scientists are learning to edit the instructions inside our cells.',
-        image: 'assets/brain.jpg',
-        imageAlt: 'Brain research',
-        link: 'article.html?id=conversation-001',
-        linkLabel: 'Read the explanation →'
-      },
-      {
-        eyebrow: 'EXPLAINED 002',
-        title: 'How does medical AI actually work?',
-        description: 'An accessible look at how algorithms can help doctors find patterns in medical images.',
-        image: 'assets/image2.png',
-        imageAlt: 'Medical research',
-        link: 'article.html?id=conversation-002',
-        linkLabel: 'Read the explanation →'
-      },
-      {
-        eyebrow: 'EXPLAINED 003',
-        title: 'Why does studying one cell matter?',
-        description: 'Understanding single cells can reveal details about diseases that disappear when we only look at an entire tumour.',
-        image: 'assets/image3.png',
-        imageAlt: 'Cancer research',
-        link: 'article.html?id=conversation-003',
-        linkLabel: 'Read the explanation →'
-      }
-    ]
-  },
+  stories: [
+    {
+      eyebrow: 'EXPLAINED 001',
+      title: 'What happens when we rewrite a gene?',
+      description: 'A clear introduction to gene therapy and how scientists are learning to edit the instructions inside our cells.',
+      image: 'assets/brain.jpg',
+      imageAlt: 'Brain research',
+      link: 'article.html?id=conversation-001',
+      linkLabel: 'Read the explanation →'
+    },
+    {
+      eyebrow: 'EXPLAINED 002',
+      title: 'How does medical AI actually work?',
+      description: 'An accessible look at how algorithms can help doctors find patterns in medical images.',
+      image: 'assets/image2.png',
+      imageAlt: 'Medical research',
+      link: 'article.html?id=conversation-002',
+      linkLabel: 'Read the explanation →'
+    },
+    {
+      eyebrow: 'EXPLAINED 003',
+      title: 'Why does studying one cell matter?',
+      description: 'Understanding single cells can reveal details about diseases that disappear when we only look at an entire tumour.',
+      image: 'assets/image3.png',
+      imageAlt: 'Cancer research',
+      link: 'article.html?id=conversation-003',
+      linkLabel: 'Read the explanation →'
+    }
+  ]
+},
 
 
   community: {
