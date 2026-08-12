@@ -228,7 +228,32 @@ nav a.active::after {
 .section-heading { display: flex; justify-content: space-between; align-items: end; gap: 30px; margin-bottom: 40px; }
 .section-heading h2, .simple-section h2, .community h2 { font-family: var(--serif); font-size: clamp(45px, 4vw, 62px); line-height: .98; letter-spacing: -2px; white-space: pre-line; margin: 0; font-weight: 500; }
 .text-link { color: var(--blue); font-weight: 700; font-size: 16px; }
-.conversation-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; }
+.conversation-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 0.9fr;
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 50px;
+  align-items: stretch;
+}
+
+/* Large first card */
+.conversation-grid > *:first-child {
+  grid-row: span 2;
+}
+
+/* Keep the smaller cards compact */
+.conversation-grid > *:nth-child(2),
+.conversation-grid > *:nth-child(3) {
+  align-self: stretch;
+}
+.conversation-grid > *:first-child .card-image img {
+  aspect-ratio: 1.25;
+}
+
+.conversation-grid > *:nth-child(2) .card-image img,
+.conversation-grid > *:nth-child(3) .card-image img {
+  aspect-ratio: 1.5;
+}
 .card-image { display: block; overflow: hidden; }
 .card-image img {
   width: 100%;
@@ -271,7 +296,18 @@ code { font-family: monospace; background: #e9e8e2; padding: 2px 5px; }
   .menu-btn { display: block; margin-left: auto; }
   .hero { grid-template-columns: 1fr; gap: 45px; padding-top: 65px; }
   .hero h1 { font-size: clamp(60px, 15vw, 90px); }
-  .conversation-grid, .featured-card { grid-template-columns: 1fr; }
+  .conversation-grid,
+.featured-card {
+  grid-template-columns: 1fr;
+}
+
+.conversation-grid {
+  grid-template-rows: auto;
+}
+
+.conversation-grid > *:first-child {
+  grid-row: auto;
+}
   .section-heading { align-items: start; flex-direction: column; }
   .featured-copy { padding-bottom: 30px; }
   .community { flex-direction: column; align-items: start; }
