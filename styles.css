@@ -301,8 +301,8 @@ code { font-family: monospace; background: #e9e8e2; padding: 2px 5px; }
   grid-template-columns: 1fr;
 }
 
-.conversation-grid {
-  grid-template-rows: auto;
+.conversation-grid > *:first-child {
+  grid-row: auto;
 }
 
 .conversation-grid > *:first-child {
