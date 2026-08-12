@@ -36,31 +36,45 @@ image:'assets/brain.avif',
   },
 
   conversations: [
-    {
-      id: 'conversation-002',
-      eyebrow: 'CONVERSATION 002 · AI IN MEDICINE',
-      title: 'The doctor who trained an algorithm to notice what she couldn’t',
-      description: 'Dr. Noor Kessler on radiology, humility, and building AI that keeps the doctor in the loop.',
-      person: 'Dr. Noor Kessler',
-      role: 'Clinical Lead, Imaging AI Program, Rivendale University Hospital',
-      image: 'assets/robo hand.avif',
-      imageAlt: 'Robot hand',
-      link: 'article.html?id=conversation-002',
-      linkLabel: 'Read the Interview ↗'
-    },
-    {
-      id: 'conversation-003',
-      eyebrow: 'CONVERSATION 003 · CANCER RESEARCH',
-      title: 'Listening to what a single cancer cell is trying to tell you',
-      description: 'Dr. Hana Castellani on single-cell sequencing, why the “tumor” is a lie, and the beauty of a stubborn outlier.',
-      person: 'Dr. Hana Castellani',
-      role: 'Senior Researcher, Cancer Systems Biology, Westgate Cancer Research Centre',
-      image: 'assets/micro.avif',
-      imageAlt: 'Microscope',
-      link: 'article.html?id=conversation-003',
-      linkLabel: 'Read the Interview ↗'
-    }
-  ],
+  {
+    id: 'conversation-002',
+    eyebrow: 'CONVERSATION 002 · AI IN MEDICINE',
+    title: 'The doctor who trained an algorithm to notice what she couldn’t',
+    description: 'Dr. Noor Kessler on radiology, humility, and building AI that keeps the doctor in the loop.',
+    person: 'Dr. Noor Kessler',
+    role: 'Clinical Lead, Imaging AI Program, Rivendale University Hospital',
+    image: 'assets/robo hand.avif',
+    imageAlt: 'Robot hand',
+    link: 'article.html?id=conversation-002',
+    linkLabel: 'Read the Interview ↗'
+  },
+
+  {
+    id: 'conversation-003',
+    eyebrow: 'CONVERSATION 003 · CANCER RESEARCH',
+    title: 'Listening to what a single cancer cell is trying to tell you',
+    description: 'Dr. Hana Castellani on single-cell sequencing, why the “tumor” is a lie, and the beauty of a stubborn outlier.',
+    person: 'Dr. Hana Castellani',
+    role: 'Senior Researcher, Cancer Systems Biology, Westgate Cancer Research Centre',
+    image: 'assets/micro.avif',
+    imageAlt: 'Microscope',
+    link: 'article.html?id=conversation-003',
+    linkLabel: 'Read the Interview ↗'
+  },
+
+  {
+    id: 'conversation-004',
+    eyebrow: 'CONVERSATION 004 · NEUROSCIENCE',
+    title: 'What happens when we look at the brain differently',
+    description: 'A conversation about new ways of studying the brain, unexpected patterns, and the questions scientists are still trying to answer.',
+    person: 'Dr. Maya Rowan',
+    role: 'Neuroscience Researcher',
+    image: 'assets/brain.jpg',
+    imageAlt: 'Brain research',
+    link: 'article.html?id=conversation-004',
+    linkLabel: 'Read the Interview ↗'
+  }
+],
 
   featured: {
     eyebrow: 'FEATURED CONVERSATION',
@@ -125,7 +139,26 @@ const ARTICLES = {
       { heading: 'Start here.', text: 'Replace this paragraph with your interview introduction.' },
       { heading: 'One cell at a time', text: 'Add your article text, images, links, embeds, and other content here.' }
     ]
-  }
+  },
+  'conversation-004': {
+  date: '2026',
+  eyebrow: 'CONVERSATION 004 · NEUROSCIENCE',
+  title: 'What happens when we look at the brain differently',
+  intro: 'A conversation about new ways of studying the brain, unexpected patterns, and the questions scientists are still trying to answer.',
+  person: 'Dr. Maya Rowan',
+  role: 'Neuroscience Researcher',
+  image: 'assets/brain.jpg',
+  body: [
+    {
+      heading: 'Start here.',
+      text: 'Replace this paragraph with your interview introduction.'
+    },
+    {
+      heading: 'Seeing the brain differently',
+      text: 'Add your interview, research, quotes, references, and other material here.'
+    }
+  ]
+},
 };
 
 // Pages below are also editable here.
