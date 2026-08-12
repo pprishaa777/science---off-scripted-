@@ -47,7 +47,41 @@ nav a {
   font-size: 16px;
 }
 
-nav a:hover,
+nav a {
+  position: relative;
+  color: var(--ink);
+  transition: color .2s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -9px;
+  height: 2px;
+  background: var(--blue);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform .2s ease;
+}
+
+nav a:hover {
+  color: var(--blue);
+}
+
+nav a:hover::after {
+  transform: scaleX(1);
+}
+
+nav a.active {
+  color: var(--blue);
+}
+
+nav a.active::after {
+  transform: scaleX(1);
+}
+
 .text-link:hover {
   color: var(--blue);
 }
