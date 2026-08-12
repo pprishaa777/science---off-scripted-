@@ -278,6 +278,28 @@ function renderExplained() {
     </article>
   `).join('');
 }
+function renderCommunity() {
+
+  const title = document.getElementById('community-title');
+
+  if (!title || !PAGES || !PAGES.community) return;
+
+  const page = PAGES.community;
+
+  setText('community-eyebrow', page.eyebrow);
+  setText('community-title', page.title);
+  setText('community-description', page.description);
+
+  setText(
+    'community-form-title',
+    page.formTitle
+  );
+
+  setText(
+    'community-form-text',
+    page.formText
+  );
+}
 function renderArticle() {
   const root = document.getElementById('article-root');
   if (!root) return;
@@ -308,4 +330,5 @@ renderHeader();
 renderHome();
 renderDiscoveries();
 renderExplained();
+renderCommunity();
 renderArticle();
