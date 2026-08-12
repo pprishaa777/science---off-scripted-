@@ -24,7 +24,7 @@ const SITE = {
     description: 'We talk to the doctors, researchers, and students shaping what happens next — and ask the questions that don’t make it into the paper.',
     primaryButton: { label: 'Explore Interviews →', href: '#interviews' },
     secondaryButton: { label: 'Ask a Question', href: '#community' },
-image: 'brain.jpg',
+image:'assets/brain.jpg',
     imageAlt: 'Researcher working in a laboratory',
     badge: 'Conversation 001'
   },
