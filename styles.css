@@ -809,3 +809,7 @@ FEATURED CONVERSATION — REFERENCE
     font-size: 46px;
   }
 }
+/* Hide Featured Conversation on homepage */
+.featured {
+  display: none;
+}
