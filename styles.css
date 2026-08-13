@@ -256,14 +256,14 @@ nav a.active::after {
 
 /* Large image */
 .conversation-grid > *:first-child .card-image img {
-  aspect-ratio: 1.25;
+  aspect-ratio: 1.45;
   object-fit: cover;
 }
 
 /* Smaller images */
 .conversation-grid > *:nth-child(2) .card-image img,
 .conversation-grid > *:nth-child(3) .card-image img {
-  aspect-ratio: 1.5;
+  aspect-ratio: 1.75;
   object-fit: cover;
 }
 
