@@ -582,7 +582,10 @@ code { font-family: monospace; background: #e9e8e2; padding: 2px 5px; }
   font-size: 17px;
   line-height: 1.55;
 }
-
+/* Show only the first two Latest Conversation cards */
+.latest .conversation-grid > *:nth-child(3) {
+  display: none;
+}
 /* Featured section gets its own separator */
 .featured {
   border-bottom: 1px solid var(--line);
