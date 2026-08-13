@@ -241,6 +241,7 @@ nav a.active::after {
 .conversation-grid > *:first-child {
   grid-column: 1;
   grid-row: 1 / span 2;
+  align-self: start;
 }
 
 /* Two smaller cards stacked on the right */
