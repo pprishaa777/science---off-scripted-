@@ -256,7 +256,7 @@ nav a.active::after {
 
 /* Large image */
 .conversation-grid > *:first-child .card-image img {
-  aspect-ratio: 1.45;
+  aspect-ratio: 0.9;
   object-fit: cover;
 }
 
