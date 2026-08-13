@@ -173,34 +173,46 @@ const PAGES = {
   sectionTitle: 'What scientists are finding now.',
 
   stories: [
-    {
-      eyebrow: 'DISCOVERY 001',
-      title: 'A new way of looking at the brain',
-      description: 'Replace this text with your latest discovery, research finding, or science news story.',
-      image: 'assets/brain.jpg',
-      imageAlt: 'Scientific research',
-      link: 'article.html?id=conversation-001',
-      linkLabel: 'Read the story →'
-    },
-    {
-      eyebrow: 'DISCOVERY 002',
-      title: 'When medicine meets artificial intelligence',
-      description: 'Add another discovery, breakthrough, or research story here.',
-      image: 'assets/image2.png',
-      imageAlt: 'Medical research',
-      link: 'article.html?id=conversation-002',
-      linkLabel: 'Read the story →'
-    },
-    {
-      eyebrow: 'DISCOVERY 003',
-      title: 'What a single cell can reveal',
-      description: 'Add your next science discovery or research story here.',
-      image: 'assets/image3.png',
-      imageAlt: 'Cancer research',
-      link: 'article.html?id=conversation-003',
-      linkLabel: 'Read the story →'
-    }
-  ]
+  {
+    eyebrow: 'DISCOVERY 001',
+    title: 'A new way of looking at the brain',
+    description: 'Replace this with the first science story you want to feature.',
+    image: 'assets/brain.jpg',
+    imageAlt: 'Scientific research',
+    link: 'article.html?id=conversation-001',
+    linkLabel: 'Read the story →'
+  },
+
+  {
+    eyebrow: 'DISCOVERY 002',
+    title: 'When medicine meets artificial intelligence',
+    description: 'Replace this with the second science story you want to feature.',
+    image: 'assets/image2.png',
+    imageAlt: 'Medical research',
+    link: 'article.html?id=conversation-002',
+    linkLabel: 'Read the story →'
+  },
+
+  {
+    eyebrow: 'DISCOVERY 003',
+    title: 'What a single cell can reveal',
+    description: 'Replace this with the third science story you want to feature.',
+    image: 'assets/image3.png',
+    imageAlt: 'Cancer research',
+    link: 'article.html?id=conversation-003',
+    linkLabel: 'Read the story →'
+  },
+
+  {
+    eyebrow: 'DISCOVERY 004',
+    title: 'The next question scientists are asking',
+    description: 'Replace this with the fourth science story you want to feature.',
+    image: 'assets/brain.avif',
+    imageAlt: 'Science research',
+    link: 'article.html?id=conversation-004',
+    linkLabel: 'Read the story →'
+  }
+]
 },
 
 
