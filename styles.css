@@ -507,3 +507,19 @@ code { font-family: monospace; background: #e9e8e2; padding: 2px 5px; }
   }
 
 }
+/* FIX LARGE CARD HEIGHT */
+.conversation-grid > *:first-child {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  align-self: stretch;
+}
+
+.conversation-grid > *:first-child .card-image {
+  height: 100%;
+}
+
+.conversation-grid > *:first-child .card-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
