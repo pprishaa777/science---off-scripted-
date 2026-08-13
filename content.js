@@ -33,7 +33,53 @@ image:'assets/brain.avif',
     title: 'Real people. Real research.\nReal curiosity.',
     link: { label: 'Explore Interviews →', href: '#interviews' }
   },
+whatsHappening: {
+  eyebrow: "WHAT'S HAPPENING IN SCIENCE",
+  title: 'What scientists are finding now.',
+  link: { label: 'Explore Discoveries →', href: 'discoveries.html' },
 
+  stories: [
+    {
+      eyebrow: 'DISCOVERY 001',
+      title: 'A new way of looking at the brain',
+      description: 'Replace this with your first science story.',
+      image: 'assets/brain.jpg',
+      imageAlt: 'Brain research',
+      link: 'discoveries.html',
+      linkLabel: 'Read the story →'
+    },
+
+    {
+      eyebrow: 'DISCOVERY 002',
+      title: 'When medicine meets artificial intelligence',
+      description: 'Replace this with your second science story.',
+      image: 'assets/image2.png',
+      imageAlt: 'Medical research',
+      link: 'discoveries.html',
+      linkLabel: 'Read the story →'
+    },
+
+    {
+      eyebrow: 'DISCOVERY 003',
+      title: 'What a single cell can reveal',
+      description: 'Replace this with your third science story.',
+      image: 'assets/image3.png',
+      imageAlt: 'Cancer research',
+      link: 'discoveries.html',
+      linkLabel: 'Read the story →'
+    },
+
+    {
+      eyebrow: 'DISCOVERY 004',
+      title: 'The next question scientists are asking',
+      description: 'Replace this with your fourth science story.',
+      image: 'assets/brain.avif',
+      imageAlt: 'Science research',
+      link: 'discoveries.html',
+      linkLabel: 'Read the story →'
+    }
+  ]
+},
   conversations: [
   {
     id: 'conversation-002',
