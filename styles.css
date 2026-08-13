@@ -586,6 +586,56 @@ code { font-family: monospace; background: #e9e8e2; padding: 2px 5px; }
 .latest .conversation-grid > *:nth-child(3) {
   display: none;
 }
+/* Make the two Latest Conversation cards exactly equal */
+.latest .conversation-grid {
+  align-items: stretch;
+}
+
+.latest .conversation-grid > *:nth-child(1),
+.latest .conversation-grid > *:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Same image size */
+.latest .conversation-grid > *:nth-child(1) .card-image,
+.latest .conversation-grid > *:nth-child(2) .card-image {
+  width: 100%;
+  aspect-ratio: 1.18;
+}
+
+.latest .conversation-grid > *:nth-child(1) .card-image img,
+.latest .conversation-grid > *:nth-child(2) .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Same text positioning */
+.latest .conversation-grid > *:nth-child(1) .card-copy,
+.latest .conversation-grid > *:nth-child(2) .card-copy {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Same title size */
+.latest .conversation-grid > *:nth-child(1) .card-copy h3,
+.latest .conversation-grid > *:nth-child(2) .card-copy h3 {
+  font-size: clamp(28px, 2.6vw, 40px);
+  line-height: 1.05;
+  letter-spacing: -1px;
+  margin: 0 0 15px;
+}
+
+/* Same description styling */
+.latest .conversation-grid > *:nth-child(1) .card-copy > p:not(.eyebrow):not(.byline),
+.latest .conversation-grid > *:nth-child(2) .card-copy > p:not(.eyebrow):not(.byline) {
+  font-size: 17px;
+  line-height: 1.55;
+  margin-top: 0;
+}
 /* Featured section gets its own separator */
 .featured {
   border-bottom: 1px solid var(--line);
