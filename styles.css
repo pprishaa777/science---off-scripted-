@@ -813,3 +813,89 @@ FEATURED CONVERSATION — REFERENCE
 .featured {
   display: none;
 }
+/* =========================================
+   WHAT'S HAPPENING — 4 SMALL CARDS
+   ========================================= */
+
+.home-discoveries {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.home-discoveries-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 35px;
+}
+
+.home-discoveries-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.home-discovery-card {
+  min-width: 0;
+}
+
+.home-discovery-card .card-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+.home-discovery-card .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.home-discovery-card .card-copy {
+  padding: 0;
+}
+
+.home-discovery-card .eyebrow {
+  margin-bottom: 10px;
+  font-size: 11px;
+}
+
+.home-discovery-card h3 {
+  font-size: 21px;
+  line-height: 1.12;
+  letter-spacing: -0.4px;
+  margin: 0 0 10px;
+}
+
+.home-discovery-card .card-copy > p:not(.eyebrow) {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 14px;
+}
+
+.home-discovery-card .text-link {
+  font-size: 13px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .home-discoveries-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .home-discoveries-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .home-discoveries-grid {
+    grid-template-columns: 1fr;
+  }
+}
