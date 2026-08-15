@@ -988,3 +988,152 @@ FEATURED CONVERSATION — REFERENCE
     gap: 55px;
   }
 }
+/* =========================
+   COMMUNITY QUESTION SECTION
+   ========================= */
+
+.community {
+  background: #171918;
+  color: #f7f5f0;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 80px;
+  align-items: center;
+  min-height: 620px;
+}
+
+.community-copy {
+  max-width: 590px;
+}
+
+.community-icon {
+  color: #c8f04a;
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 28px;
+}
+
+.community-copy .eyebrow {
+  color: #0757c9;
+  margin-bottom: 30px;
+}
+
+.community-copy h2 {
+  color: #f7f5f0;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(56px, 5vw, 82px);
+  font-weight: 500;
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  margin: 0 0 35px;
+}
+
+.community-copy > p:last-child {
+  color: #b9bbb7;
+  font-size: 21px;
+  line-height: 1.55;
+  max-width: 570px;
+  margin: 0;
+}
+
+
+/* FORM */
+
+.community-form {
+  background: #f7f5f0;
+  color: #171918;
+  border-radius: 22px;
+  padding: 58px 54px 52px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.community-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  color: #0757c9;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  margin-bottom: 24px;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  border-bottom: 2px solid #292b2a;
+  background: transparent;
+  border-radius: 0;
+  outline: none;
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  color: #171918;
+  padding: 8px 0 14px;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: #a6adb8;
+  opacity: 1;
+}
+
+.form-question {
+  margin-top: 34px;
+}
+
+.form-question textarea {
+  min-height: 130px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.community-submit {
+  margin-top: 38px;
+  border: 0;
+  border-radius: 999px;
+  background: #0757c9;
+  color: #fff;
+  padding: 17px 36px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.community-submit:hover {
+  opacity: 0.9;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+  .community {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .community-copy h2 {
+    font-size: 54px;
+  }
+
+  .community-form-row {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .community-form {
+    padding: 40px 28px;
+  }
+}
