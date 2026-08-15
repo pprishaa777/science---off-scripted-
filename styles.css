@@ -914,6 +914,7 @@ FEATURED CONVERSATION — REFERENCE
 
 .home-explained {
   background: #f1f0eb;
+  border-bottom: 1px solid var(--line);
   padding-top: 110px;
   padding-bottom: 120px;
 }
