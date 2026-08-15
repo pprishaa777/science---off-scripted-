@@ -6,12 +6,11 @@
 
 const SITE = {
   brand: 'SCIENCE — OFF-SCRIPT',
-  nav: [
+ nav: [
   { label: 'Home', href: 'index.html' },
   { label: 'Interviews', href: 'interviews.html' },
   { label: 'Discoveries', href: 'discoveries.html' },
   { label: 'Explained', href: 'explained.html' },
-  { label: 'Community', href: 'community.html' },
   { label: 'About', href: 'about.html' }
 ],
   searchLabel: 'Search',
