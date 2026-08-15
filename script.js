@@ -387,3 +387,4 @@ renderDiscoveries();
 renderExplained();
 renderCommunity();
 renderArticle();
+renderWhatsHappening();
