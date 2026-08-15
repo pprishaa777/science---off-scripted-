@@ -395,9 +395,11 @@ code { font-family: monospace; background: #e9e8e2; padding: 2px 5px; }
   }
 
   .site-footer {
-    padding: 25px 5vw;
-    flex-direction: column;
-  }
+  padding: 25px 5vw;
+  flex-direction: column;
+  background: #171717;
+  color: #f7f6f2;
+}
 
   .article-hero {
     width: 90vw;
