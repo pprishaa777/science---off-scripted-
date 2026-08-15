@@ -165,7 +165,53 @@ function renderHome() {
 
   }
 
+// What's Happening in Science
+const happeningGrid = document.getElementById('whats-happening-grid');
 
+if (happeningGrid && SITE.whatsHappening) {
+
+  setText(
+    'whats-happening-eyebrow',
+    SITE.whatsHappening.eyebrow
+  );
+
+  setText(
+    'whats-happening-title',
+    SITE.whatsHappening.title
+  );
+
+  setLink(
+    'whats-happening-link',
+    SITE.whatsHappening.link
+  );
+
+  happeningGrid.innerHTML = SITE.whatsHappening.stories.map(item => `
+
+    <article class="home-discovery-card">
+
+      <a href="${item.link}" class="card-image">
+        <img src="${item.image}" alt="${item.imageAlt}">
+      </a>
+
+      <div class="card-copy">
+
+        <p class="eyebrow">${item.eyebrow}</p>
+
+        <h3>${item.title}</h3>
+
+        <p>${item.description}</p>
+
+        <a class="text-link" href="${item.link}">
+          ${item.linkLabel}
+        </a>
+
+      </div>
+
+    </article>
+
+  `).join('');
+
+}
   // Featured section
   setText('featured-eyebrow', SITE.featured.eyebrow);
   setText('featured-title', SITE.featured.title);
