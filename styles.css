@@ -908,3 +908,81 @@ FEATURED CONVERSATION — REFERENCE
   margin: 0;
   max-width: 760px;
 }
+/* =========================================
+   EXPLAINED — HOMEPAGE
+   ========================================= */
+
+.home-explained {
+  padding-top: 110px;
+  padding-bottom: 120px;
+}
+
+.home-explained-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 85px;
+}
+
+.home-explained-heading h2 {
+  font-family: var(--serif);
+  font-size: clamp(48px, 5vw, 76px);
+  line-height: 0.98;
+  letter-spacing: -3px;
+  font-weight: 500;
+  margin: 0;
+  max-width: 760px;
+}
+
+.home-explained-heading .text-link {
+  flex-shrink: 0;
+  margin-bottom: 8px;
+  color: #a51f25;
+}
+
+.home-explained-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+}
+
+.home-explained-card {
+  padding: 0;
+}
+
+.home-explained-card h3 {
+  font-family: var(--serif);
+  font-size: clamp(30px, 2.6vw, 42px);
+  line-height: 1.08;
+  letter-spacing: -1.5px;
+  font-weight: 500;
+  margin: 0 0 24px;
+}
+
+.home-explained-card p {
+  font-size: 18px;
+  line-height: 1.55;
+  color: #666;
+  margin: 0 0 32px;
+  max-width: 430px;
+}
+
+.home-explained-card .text-link {
+  color: #a51f25;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .home-explained-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .home-explained-grid {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+}
