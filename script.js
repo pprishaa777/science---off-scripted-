@@ -212,6 +212,29 @@ if (happeningGrid && SITE.whatsHappening) {
   `).join('');
 
 }
+  // Explained — homepage
+const explainedGrid = document.getElementById('home-explained-grid');
+
+if (explainedGrid && PAGES && PAGES.explained) {
+
+  explainedGrid.innerHTML = PAGES.explained.stories
+    .slice(0, 3)
+    .map(item => `
+      <article class="home-explained-card">
+
+        <h3>${item.title}</h3>
+
+        <p>${item.description}</p>
+
+        <a class="text-link" href="${item.link}">
+          Read the Explainer →
+        </a>
+
+      </article>
+    `)
+    .join('');
+
+}
   // Featured section
   setText('featured-eyebrow', SITE.featured.eyebrow);
   setText('featured-title', SITE.featured.title);
