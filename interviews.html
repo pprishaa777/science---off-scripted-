@@ -42,41 +42,163 @@ Join the Community
 </header>
 
 
-<main>
+<main class="interviews-page">
 
-<section class="simple-section section-pad">
+  <!-- INTRODUCTION -->
+  <section class="interviews-intro">
+    <div class="interviews-intro-inner">
+      <span class="interviews-eyebrow">SCIENCE — OFF-SCRIPT / INTERVIEWS</span>
 
-<p class="eyebrow">INTERVIEWS</p>
+      <h1>
+        Conversations behind<br>
+        the discoveries.
+      </h1>
 
-<h1>Conversations behind the discoveries.</h1>
+      <p>
+        Beyond the papers, headlines, and discoveries are the people
+        asking the questions. We sit down with researchers, doctors,
+        and curious minds to hear the stories behind their work.
+      </p>
 
-<p>
-Meet the doctors, researchers, students, and scientists asking
-questions that matter.
-</p>
+      <a href="#featured-interview" class="interviews-text-link">
+        Explore the conversations <span>↓</span>
+      </a>
+    </div>
+  </section>
 
-</section>
+  <!-- FEATURED INTERVIEW -->
+  <section class="featured-interview-section" id="featured-interview">
+    <div class="interviews-section-heading">
+      <div>
+        <span class="interviews-eyebrow">01 / EDITOR'S PICK</span>
+        <h2>Behind the discovery.</h2>
+      </div>
+      <span class="interviews-heading-note">A closer look at the people behind the research.</span>
+    </div>
 
+    <div id="featured-interview-content"></div>
+  </section>
 
-<section class="latest section-pad">
+  <!-- ALL INTERVIEWS -->
+  <section class="all-interviews-section" id="interviews">
+    <div class="interviews-section-heading">
+      <div>
+        <span class="interviews-eyebrow">02 / THE COLLECTION</span>
+        <h2>More conversations.</h2>
+      </div>
+      <span class="interviews-heading-note">Ideas, perspectives, and questions worth exploring.</span>
+    </div>
 
-<div class="section-heading">
+    <div class="interviews-grid" id="interviews-grid"></div>
+  </section>
 
-<div>
-
-<p class="eyebrow" id="latest-eyebrow"></p>
-
-<h2 id="latest-title"></h2>
-
-</div>
-
-</div>
-
-<div class="conversation-grid" id="conversation-grid"></div>
-
-</section>
+  <!-- COMMUNITY INVITATION -->
+  <section class="interviews-community">
+    <span class="interviews-eyebrow">BE PART OF THE CONVERSATION</span>
+    <h2>What would you ask a scientist?</h2>
+    <p>
+      Have a question you've always wanted answered?
+      Send it our way. It might become part of a future conversation.
+    </p>
+    <a href="community.html" class="interviews-community-link">
+      Ask a question <span>↗</span>
+    </a>
+  </section>
 
 </main>
+
+<script>
+(function () {
+  const featured = SITE.featured;
+  const conversations = SITE.conversations || [];
+
+  const escapeHTML = (value = '') =>
+    String(value).replace(/[&<>"']/g, char => ({
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#39;'
+    })[char]);
+
+  // Featured interview
+  const featuredContainer = document.getElementById(
+    'featured-interview-content'
+  );
+
+  featuredContainer.innerHTML = `
+    <a href="${escapeHTML(featured.link)}" class="featured-interview-card">
+
+      <div class="featured-interview-image">
+        <img
+          src="${escapeHTML(featured.image)}"
+          alt="${escapeHTML(featured.imageAlt)}"
+        >
+        <span class="featured-image-label">FEATURED CONVERSATION</span>
+      </div>
+
+      <div class="featured-interview-info">
+        <span class="interviews-eyebrow">
+          ${escapeHTML(featured.eyebrowArticle)}
+        </span>
+
+        <h3>${escapeHTML(featured.articleTitle)}</h3>
+
+        <p class="featured-interview-description">
+          ${escapeHTML(featured.description)}
+        </p>
+
+        <div class="featured-interview-person">
+          <strong>${escapeHTML(featured.person)}</strong>
+          <span>${escapeHTML(featured.role)}</span>
+        </div>
+
+        <span class="interviews-read-link">
+          Read the interview <span>↗</span>
+        </span>
+      </div>
+
+    </a>
+  `;
+
+  // Remaining conversations
+  const grid = document.getElementById('interviews-grid');
+
+  grid.innerHTML = conversations.map(item => `
+    <a href="${escapeHTML(item.link)}" class="interview-card">
+
+      <div class="interview-card-image">
+        <img
+          src="${escapeHTML(item.image)}"
+          alt="${escapeHTML(item.imageAlt)}"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="interview-card-info">
+        <span class="interviews-eyebrow">
+          ${escapeHTML(item.eyebrow)}
+        </span>
+
+        <h3>${escapeHTML(item.title)}</h3>
+
+        <p>${escapeHTML(item.description)}</p>
+
+        <div class="interview-card-person">
+          <strong>${escapeHTML(item.person)}</strong>
+          <span>${escapeHTML(item.role)}</span>
+        </div>
+
+        <span class="interviews-read-link">
+          Read the interview <span>↗</span>
+        </span>
+      </div>
+
+    </a>
+  `).join('');
+})();
+</script>
+
 
 
 <footer class="site-footer">
